@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    margin: 0 ;
+}
+
+
+.nav-bar{
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #282c35;
+    border-bottom: 2px solid rgb(71, 71, 71);
+    position: fixed;
+    font-family: "Mulish",-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+
+}
+.nav-bar .content{
+    color: white;
+
+}
+.nav-bar .content .menu{
+    display: none;
+}
+
+@media screen and (max-width: 950px) {
+    .links{
+        display: none;
+    }
+    .nav-bar .content{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .nav-bar .content .menu{
+        display: block;
+
+    }
+
+}
+.links{
+    margin-right: 100px;
+}
+
+.links ul{
+    list-style: none;
+    display: flex;
+}
+
+.links ul a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.links .join{
+    color:rgba(255, 68, 0, 0.913) ;
+    border: solid 2px rgba(255, 68, 0, 0.865);
+    border-radius: 5px;
+    margin-left: 40px;
+    box-shadow:0 8px 8px -9px  rgba(255, 255, 255, 0.272);
+
+ 
+}
+.links .join:hover{
+    color: orangered;
+    border-color: orangered;
+    
+}
+
+
+
